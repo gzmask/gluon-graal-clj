@@ -1,3 +1,7 @@
+# Download graal
+Download the latest release: https://github.com/graalvm/graalvm-ce-dev-builds/releases
+unpack and place to graalvm-ce
+
 # building slim size
 docker build --tag graal .
 

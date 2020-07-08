@@ -12,8 +12,8 @@ RUN apt-get -y install libgtk-3-dev libxtst-dev
 WORKDIR /usr/src/app
 
 # Copy the file from your host to your current location.
-COPY graalvm-ce-java11-20.1.0 /opt/graal
-COPY graalvm-ce-java11-20.1.0/lib /lib64
+COPY graalvm-ce /opt/graal
+COPY graalvm-ce/lib /lib64
 RUN cp /lib/x86_64-linux-gnu/libstdc++.so.6 /lib64/libstdc++.so
 
 ENV GRAALVM_HOME /opt/graal
